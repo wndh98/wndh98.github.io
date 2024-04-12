@@ -1,40 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/style_k.css">
-    <link rel="stylesheet" href="./css/style_m.css">
 
 </head>
-
 <body>
-    
-    <!-- 
-        <div class="row">
-
-            <a href="#" class="logo">
-                <img src="logo.png" alt="로고">
-
-                <ul class="menu">
-                    <a href="#">객실/시설</a>
-                    <a href="#">객실예약</a>
-                    <a href="#">객실 예약현황</a>
-                    <a href="#">주변정보</a>
-                </ul>
-
-            </a>
-        </div>
-
- -->
-
-
     <div class="wrap">
-
         <header id="menuHeader">
             <nav>
                 <div class="container">
@@ -62,21 +37,29 @@
             </nav>
         </header>
 
-
-        <section class="mainSection">
-            <div class="text1">
-                <h2 class="text1_1">여름은 짧고, 추억은 길게 남습니다.</h2>
-
-                <div class="text2">
-
-                    <span class="text2_1">여름의 추억과 함께하는 Pension</span>
-
+        <div class="joinform">
+            <form action="">
+                <h1>회원가입</h1>
+                
+                <p class="required">아이디</p>
+                <div class="textForm">
+                    <input type="text" required name="loginId">
                 </div>
-            </div>
-
-        </section> <!--섹션1번-->
-
-
+                <p class="required">패스워드</p>
+                <div class="textForm">
+                    <input type="password" required name="loginPW">
+                </div>
+                <p class="required">이메일</p>
+                <div class="textForm">
+                    <input type="email" required name="loginPW">
+                </div>
+                <p class="required">전화번호</p>
+                <div class="textForm">
+                    <input type="text" required name="loginPW" oninput="oninputPhone(this)" maxlenght="11">
+                </div>
+                <input type="submit">
+            </form>
+        </div>
 
         <footer>
             <div>
@@ -90,43 +73,44 @@
             </div>
 
         </footer>
-
-        <div class="modal" id="modal">
-            <div class="container">
-                <form action="">
-                    <h1>로그인</h1>
-                    <div class="close" id="close"></div>
-                    <p class="required">아이디</p>
-                    <div class="textForm">
-                        <input type="text" required name="loginId">
-                    </div>
-                    <p class="required">패스워드</p>
-                    <div class="textForm">
-                        <input type="password" required name="loginPW">
-                    </div>
-                    <div class="register">
-                        <div>
-                            <input type="checkbox" name="remember" id="remember">
-                            <label for="remember">
-                                <span></span><!-- 체크박스 -->
-                                로그인 유지
-                                
-                            </label>
-                        </div>
-                        <a href="#none">비밀번호 재설정</a>
-                    </div>
-
-                    <input type="submit">
-                    <div class="join">
-                        <p>계정이 없으신가요?</p>
-                        <a href="./join.html">회원가입</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-
     </div>
-    <script src="./javascript/javascript.js"></script>
-</body>
 
+
+    <div class="modal" id="modal">
+        <div class="container">
+            <form action="">
+                <h1>로그인</h1>
+                <div class="close" id="close"></div>
+                <p class="required">아이디</p>
+                <div class="textForm">
+                    <input type="text" required name="loginId">
+                </div>
+                <p class="required">패스워드</p>
+                <div class="textForm">
+                    <input type="password" required name="loginPW">
+                </div>
+                <div class="register">
+                    <div>
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">
+                            <span></span><!-- 체크박스 -->
+                            로그인 유지
+                            
+                        </label>
+                    </div>
+                    <a href="#none">비밀번호 재설정</a>
+                </div>
+
+                <input type="submit">
+                <div class="join">
+                    <p>계정이 없으신가요?</p>
+                    <a href="./join.html">회원가입</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./javascript/javascript.js"></script>
+
+</body>
 </html>
