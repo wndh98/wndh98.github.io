@@ -1,0 +1,7 @@
+html,body{
+    overflow:hidden;
+    box-sizing: border-box;
+    margin:0;
+}
+body{background-color:black;}
+canvas{margin:auto;display:block}

@@ -1,0 +1,453 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrap {
+    min-height: 100vh;
+    position:relative;
+}
+
+@media screen and (min-height:1080px) {
+    .wrap {
+        max-height: 1080px;
+    }
+}
+
+
+
+/* .main {
+    padding: 10px;
+    margin: 44px 80px 0px 44px;
+
+}
+
+첫 번째 값은 위(margin-top)의 마진을 나타냅니다.
+두 번째 값은 오른쪽(margin-right)의 마진을 나타냅니다.
+세 번째 값은 아래(margin-bottom)의 마진을 나타냅니다.
+네 번째 값은 왼쪽(margin-left)의 마진을 나타냅니다.
+
+.main .logo {
+    float: left; 
+    cursor: pointer;
+}
+
+
+.menu a {
+    float: right;
+    text-decoration: none; 
+   
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0px 16px 0px 16px;
+    padding:10px;
+    
+
+}
+.menu:hover{ background-color: #262626;
+    opacity: 0.55;
+width:auto;
+height: 420px;
+
+} */
+
+
+.mainSection {
+    min-height: 100vh;
+    background-image: url(../images/main/main-img.png);
+    background-repeat: no-repeat;
+    /*백그라운드 이미지 반복 멈추는 것*/
+
+    overflow: hidden;
+    /* 요소의 스크롤을 숨깁니다. */
+}
+
+@media screen and (min-height: 1080px) {
+    .mainSection {
+        height: 1080px;
+    }
+}
+
+
+
+/*메인 슬로건 시작*/
+.text1 {
+    color: white;
+    margin: 0 auto;
+    /*margin: 90px 0px 0px 0px;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 770px;
+    height: 140px;
+    margin-left: -385px;
+    margin-top: -70px;
+    text-align: center;
+}
+
+.text1_1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.text2_1 {
+    color: white;
+}
+
+/*메인 슬로건 끝*/
+
+
+
+/*푸터 시작*/
+footer {
+    color: #fff;
+    position: absolute;
+    min-width: 1080px;
+    bottom: 60px;
+    left: 60px;
+
+    /* position:stroke; : 문서 흐름에 따라 배치됩니다. 
+    일반적으로 position 속성을 명시적으로 지정하지 않은 경우에는 static 값이 적용됩니다
+    
+position: relative: 요소를 일반적인 문서 흐름에 따라 배치하되, 자신을 기준으로 위치를 
+상대적으로 이동할 수 있습니다.
+
+position: absolute: 요소를 문서 흐름에서 제거하고, 부모 요소 중 position 속성이 static이 아닌 요소를 기준으로 위치를 결정합니다.
+fixed: 요소를 뷰포트(viewport)의 상대적인 위치에 고정시킵니다. 스크롤해도 요소는 화면에 고정됩니다.
+
+sticky: 요소를 일반적인 문서 흐름에 따라 배치하되, 특정 위치까지 스크롤될 때 화면에 고정시킬 수 있습니다.*/
+}
+
+
+
+footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    color: #fff;
+}
+
+footer p{
+    color: #fff;
+}
+
+
+/*첫 번째 값은 위(margin-top)의 마진을 나타냅니다.
+두 번째 값은 오른쪽(margin-right)의 마진을 나타냅니다.
+세 번째 값은 아래(margin-bottom)의 마진을 나타냅니다.
+네 번째 값은 왼쪽(margin-left)의 마진을 나타냅니다.*/
+
+/*푸터 끝*/
+
+
+/*서브 페이지 푸터 폰트 컬러 변경*/
+.sub-footer {
+    color: rgba(50, 50, 50, 0.6);
+    
+}
+
+
+.sub-footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    color: rgba(50, 50, 50, 0.6);
+}
+
+.sub-footer p{
+    color: rgba(50, 50, 50, 0.6);
+}
+
+
+/* 서브페이지 (결제) 시작*/
+
+.sub-title {
+    position: relative;
+    padding-top: 250px;
+
+    /*부모기준점 잡기*/
+}
+
+.sub-title span {
+
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 160px;
+    color: #323232;
+}
+
+.sub-title p {
+    /* position: absolute; */
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 160px;
+    padding-top: 20px;
+    color: #717171;
+
+}
+
+
+
+
+.sub-title span::before {
+    /*에프터/비프로 타이틀바 제작*/
+    content: " ";
+    width: 12px;
+    height: 40px;
+    border: 5px solid #ff0048;
+    margin-right: 14px;
+
+}
+
+
+
+/*결제 확인 테이블*/
+
+.paymentTbl {
+    /* border-top: 2px solid; */
+    /* border-bottom: 2px solid; */
+    /* font-size: 18px; */
+    /* font-weight: bold; */
+    color: #323232;
+    /* margin: 20px; */
+    /* border: 1px solid; */
+    width: 1920px;
+    border-collapse: collapse;
+    margin-top: 60px;
+
+}
+
+/* .paymentTbl td{border: 1px solid;} */
+
+
+.paymentTbl {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.paymentTbl th {
+    flex: 1;
+
+
+}
+
+.paymentTbl td {
+    flex: 1;
+}
+
+.paymentTbl tr:first-child {
+    border-top: 2px solid #323232;
+    border-bottom: 2px solid;
+    line-height: 3;
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-around;
+}
+
+.paymentTbl tr:not(:first-child) {
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    padding: 0 100px;
+}
+
+/* .paymentTbl tr {border-top:2px solid; border-bottom: 2px solid;} */
+
+.paymentTbl td:not(:last-child) {
+    line-height: 40px;
+    margin: 12px auto;
+}
+
+
+.paymentTbl th {
+    font-size: 20px;
+    color: #323232;
+    font-weight: bold;
+}
+
+.paymentTbl td {
+    font-size: 16px;
+    color: #323232;
+}
+
+.paymentTbl td .aasdf {
+    color: #969696;
+}
+
+.paymentTbl td .aasdf02 {
+    color: #ff0048;
+    font-weight: bold;
+}
+
+.paymentTbl td .aasdf03 {
+    color: #ff0048;
+    font-weight: bold;
+}
+
+.paymentTbl td input {
+    width: 18px;
+    height: 18px;
+    margin-top: 11px;
+}
+
+.but {
+    width: 303px;
+    height: 73px;
+    font-size: 28px;
+    color: #323232;
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    display:block;
+    margin:auto;
+    /* position: absolute; */
+    /* top: 620px; */
+    /* left: 808px; */
+    /* right: 808px; */
+    font-weight: bold;
+
+}
+
+.but:hover {
+    width: 303px;
+    height: 73px;
+    font-size: 28px;
+    color: #fff;
+    background-color: #ff0048;
+    border: 2px solid #ff0048;
+    font-weight: bold;
+}
+
+.all-pay {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 160px;
+    margin-top: 60px;
+
+}
+
+/* 환불규정 */
+.paymentTb2 {
+    width: 1599px;
+    height: 180px;
+    margin-top: 40px;
+}
+
+
+.paymentTb2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 2.3;
+
+}
+
+.paymentTb2 th {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+
+}
+
+.paymentTb2 td {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+}
+
+.paymentTb2 tr:first-child {
+    line-height: 1;
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-around;
+
+}
+
+.paymentTb2 tr:nth-child(2) {
+    line-height: 6;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: space-around;
+}
+
+
+.paymentTb2 tr:not(:first-child) {
+    display: flex;
+    padding: 0 100px;
+}
+
+
+
+
+
+
+.paymentTb2 th {
+    font-size: 20px;
+    color: #323232;
+    font-weight: bold;
+    line-height: 2;
+
+}
+
+.paymentTb2 td {
+    font-size: 16px;
+    color: #323232;
+}
+
+
+.sub-title2 {
+    position: relative;
+    margin-top: 160px;
+
+    /*부모기준점 잡기*/
+}
+
+.sub-title2 span {
+
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 160px;
+    color: #323232;
+}
+
+
+
+.sub-title2 span::before {
+    /*에프터/비프로 타이틀바 제작*/
+    content: " ";
+    width: 12px;
+    height: 40px;
+    border: 5px solid #ff0048;
+    margin-right: 14px;
+
+}
+
+
+.table-list ::before {
+    content: '';
+    width: 0px;
+    height: 14px;
+    border: 4px solid #ff0048;
+    font-size: 16px;
+    color: #323232;
+    position: absolute;
+    margin-left: -30px;
+}
+
+    .table-list p {
+        position: relative;
+        margin-left: 178px;
+    }
+
+
+    .table-list {margin-top: 80px;
+        padding-bottom: 300px;
+    }

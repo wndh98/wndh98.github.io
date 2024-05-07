@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style_k.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <header id="menuHeader">
+            <nav>
+                <div class="container">
+                    <h1><a href="./index.html"><img src="./images/logo-2.png" alt=""></a></h1>
+                    <div class="allMenu">
+                        <ul class="menu">
+                            <li id="menu01">
+                                <a href="./facility.html">객실/시설</a>
+                                <div class="subMenu" id="subMenu01">
+                                    <ul>
+                                        <li><a href="./facility.html">캠핑장</a></li>
+                                        <li><a href="./facility.html">독채펜션</a></li>
+                                        <li><a href="./facility.html">카페</a></li>
+                                        <li><a href="./facility.html">애견놀이터</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="menu02"><a href="#none" id="menu02">객실예약</a></li>
+                            <li id="menu03"><a href="./reservation.html" id="menu03">객실 예약현황</a></li>
+                            <li id="menu04"><a href="./travel.html" id="menu04">주변정보</a></li>
+                            <li id="menu05"><a href="#none" id="menu05">로그인</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="joinform">
+            <form action="">
+                <h1>회원가입</h1>
+                
+                <p class="required">아이디</p>
+                <div class="textForm">
+                    <input type="text" required name="loginId">
+                </div>
+                <p class="required">패스워드</p>
+                <div class="textForm">
+                    <input type="password" required name="loginPW">
+                </div>
+                <p class="required">이메일</p>
+                <div class="textForm">
+                    <input type="email" required name="loginPW">
+                </div>
+                <p class="required">전화번호</p>
+                <div class="textForm">
+                    <input type="text" required name="loginPW" oninput="oninputPhone(this)" maxlenght="11">
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+
+        <footer>
+            <div>
+                <h2> 010 · 1234 · 5678</h2>
+                <h2>펜션 글램핑장</h2>
+
+
+
+                <p> 충청남도 태안군 12길 70-2~5 | 사업장 등록번호:12345-56-78910 |
+                    통신판매업 등록:제2023-충남태안-1111호</p>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <div class="modal" id="modal">
+        <div class="container">
+            <form action="">
+                <h1>로그인</h1>
+                <div class="close" id="close"></div>
+                <p class="required">아이디</p>
+                <div class="textForm">
+                    <input type="text" required name="loginId">
+                </div>
+                <p class="required">패스워드</p>
+                <div class="textForm">
+                    <input type="password" required name="loginPW">
+                </div>
+                <div class="register">
+                    <div>
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">
+                            <span></span><!-- 체크박스 -->
+                            로그인 유지
+                            
+                        </label>
+                    </div>
+                    <a href="#none">비밀번호 재설정</a>
+                </div>
+
+                <input type="submit">
+                <div class="join">
+                    <p>계정이 없으신가요?</p>
+                    <a href="./join.html">회원가입</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./javascript/javascript.js"></script>
+
+</body>
+</html>

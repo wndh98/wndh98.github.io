@@ -1,0 +1,41 @@
+// 보스가 쏜 총알 배열
+const bossBullets = [];
+
+// 보스 총알 생성 함수
+function spawnBossBullet() {
+  bossBullets.push({ x: boss.x + boss.width / 2, y: boss.y + boss.height, radius: 5, speed: 5, color: "#00FF00" });
+}
+
+// 보스 총알 그리기
+bossBullets.forEach((bullet, index) => {
+  ctx.fillStyle = bullet.color;
+  ctx.beginPath();
+  ctx.arc(bullet.x, bullet.y, bullet.radius, 0, Math.PI * 2);
+  ctx.fill();
+
+  // 보스 총알 이동
+  bullet.y += bullet.speed;
+
+  // 보스 총알이 캔버스 밖으로 나갔을 때 제거
+  if (bullet.y > canvas.height) {
+    bossBullets.splice(index, 1);
+  }
+
+  // 플레이어와 보스 총알 충돌 검사
+  if (
+    player.x < bullet.x + bullet.radius &&
+    player.x + player.width > bullet.x - bullet.radius &&
+    player.y < bullet.y + bullet.radius &&
+    player.y + player.height > bullet.y - bullet.radius
+  ) {
+    // 플레이어의 체력 감소
+    playerHealth -= 10; // 적절한 체력 감소량 설정
+    console.log("Player health:", playerHealth);
+
+    // 보스 총알 제거
+    bossBullets.splice(index, 1);
+  }
+});
+
+// 보스가 총알을 일정 시간마다 발사
+setInterval(spawnBossBullet, 2000); // 2초마다 총알 발사
